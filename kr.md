@@ -73,5 +73,3 @@
 ## 🧠 레포지토리 철학
 
 지속성은 꾸준히 무언가를 올리는 것만이 아닌 **의미있는 무언가를 지속적으로 올리는 것**이란 레포지토리만의 확고한 철학을 가지고있습니다.
-
-This repository evolves as I rethink, rebuild, and refine how I approach problems.
