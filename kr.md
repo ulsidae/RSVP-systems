@@ -1,6 +1,6 @@
 # 🍯 R.S.V.P — Ready Systems, Verified Performance
 
-🌐 [영어로 작성한 원문]()
+🌐 [영어로 작성한 원문](https://github.com/ulsidae/RSVP-systems/blob/main/README.md)
 
 ---
 
