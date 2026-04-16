@@ -1,6 +1,6 @@
 # 🍯 R.S.V.P — Ready Systems, Verified Performance
 
-🌐 [Korean Version]()
+🌐 [Korean Version](https://github.com/ulsidae/RSVP-systems/blob/main/kr.md)
 
 ---
 
