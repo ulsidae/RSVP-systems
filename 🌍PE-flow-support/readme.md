@@ -1,5 +1,7 @@
 ## PE-flow-support
 
+> Real-time game flow support in a physical education setting.
+
 ---
 
 ### 📌 Problem
