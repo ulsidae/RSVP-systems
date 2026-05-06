@@ -81,7 +81,7 @@ The focus was not task execution, but operating within a dynamic system where pr
 
 ## 🔍 Reflection
 
-<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DPE-flow-support/img/20260430_141002.jpg" height="400" />
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DPE-flow-support/img/20260430_141002.jpg" height="200" />
 
 Over three days, this experience highlighted how real-world systems operate:
 
