@@ -71,7 +71,7 @@ A slide designed based on the system principles:
 - Minimal noise  
 - Action-oriented messaging  
 
-<img src="" height="400" />
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DHigh-Impact%20Self-Introduction%20System/img/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3.PNG" height="400" />
 
 ---
 
