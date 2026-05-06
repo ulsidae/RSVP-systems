@@ -2,6 +2,8 @@
 
 > Multi-role on-site operations under real-world constraints (3-day field experience)
 
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DPE-flow-support/img/banner.jpg" height="400" />
+
 ---
 
 ## 📌 Overview
@@ -50,6 +52,8 @@ The focus was not task execution, but operating within a dynamic system where pr
 - Stabilized situations until further support arrived  
 - Balanced safety handling with ongoing activity flow  
 
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DPE-flow-support/img/20260428_161024.jpg" height="400" />
+
 ### 3. Resource & Equipment Management
 - Organized and maintained event equipment  
 - Transported and positioned a refrigerator under space constraints  
@@ -76,6 +80,8 @@ The focus was not task execution, but operating within a dynamic system where pr
 ---
 
 ## 🔍 Reflection
+
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DPE-flow-support/img/20260430_141002.jpg" height="400" />
 
 Over three days, this experience highlighted how real-world systems operate:
 
