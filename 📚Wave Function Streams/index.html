@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Wave Function Streams</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:monospace;
+        }
+
+        body{
+            background:#000;
+            color:#fff;
+            padding:30px;
+            min-height:100vh;
+        }
+
+        h1{
+            font-size:30px;
+            margin-bottom:8px;
+        }
+
+        .subtitle{
+            color:#777;
+            margin-bottom:25px;
+        }
+
+        .layout{
+            display:flex;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .left{
+            flex:1;
+            min-width:520px;
+        }
+
+        .right{
+            width:360px;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            gap:10px;
+        }
+
+        .cell{
+            height:95px;
+            border:1px solid #222;
+            position:relative;
+            overflow:hidden;
+            cursor:pointer;
+            transition:.15s;
+        }
+
+        .cell:hover{
+            border-color:#fff;
+            transform:scale(1.03);
+        }
+
+        .value{
+            position:absolute;
+            inset:0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        .wavebar{
+            position:absolute;
+            left:0;
+            bottom:0;
+            height:5px;
+            background:#fff;
+        }
+
+        .waveprob{
+            position:absolute;
+            top:6px;
+            right:6px;
+            font-size:11px;
+            color:#777;
+        }
+
+        .panel{
+            border:1px solid #222;
+            padding:15px;
+            margin-bottom:15px;
+        }
+
+        .big{
+            font-size:54px;
+            margin-top:8px;
+        }
+
+        .metric{
+            margin-top:10px;
+            color:#999;
+        }
+
+        .analysis{
+            max-height:320px;
+            overflow:auto;
+        }
+
+        .analysis-row{
+            border:1px solid #111;
+            padding:8px;
+            margin-top:8px;
+            font-size:12px;
+        }
+
+        .best{
+            border-color:#fff;
+        }
+
+        .log{
+            height:220px;
+            overflow:auto;
+            border:1px solid #111;
+            padding:10px;
+            font-size:12px;
+        }
+
+        .log div{
+            margin-bottom:10px;
+            border-bottom:1px solid #111;
+            padding-bottom:8px;
+        }
+
+        .footer{
+            margin-top:10px;
+            color:#666;
+            font-size:12px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>WAVE FUNCTION STREAMS</h1>
+
+<div class="subtitle">
+    Quantum Probability Collapse / Entropy Field / Human Observation
+</div>
+
+<div class="layout">
+
+    <div class="left">
+
+        <div class="grid" id="grid"></div>
+
+        <div class="footer">
+            White bars represent wave probability stability.
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <div class="panel">
+
+            CURRENT STATE
+
+            <div class="big" id="currentNumber">
+                1
+            </div>
+
+            <div class="metric">
+                Probability Range : 1 - 20
+            </div>
+
+        </div>
+
+        <div class="panel">
+
+            <div>
+                Collapse Score :
+                <span id="score">0</span>
+            </div>
+
+            <div class="metric">
+                Wave Sync :
+                <span id="sync">0%</span>
+            </div>
+
+            <div class="metric">
+                Field Entropy :
+                <span id="entropy">0</span>
+            </div>
+
+            <div class="metric">
+                Remaining States :
+                <span id="remaining">20</span>
+            </div>
+
+        </div>
+
+        <div class="panel">
+
+            <b>WAVE FIELD ANALYSIS</b>
+
+            <div
+                    class="analysis"
+                    id="analysis">
+            </div>
+
+        </div>
+
+        <div class="log" id="log"></div>
+
+    </div>
+
+</div>
+
+<script>
+
+    const TOTAL = 20;
+    const COLS = 5;
+
+    const gridEl =
+        document.getElementById("grid");
+
+    const currentEl =
+        document.getElementById("currentNumber");
+
+    const scoreEl =
+        document.getElementById("score");
+
+    const syncEl =
+        document.getElementById("sync");
+
+    const entropyEl =
+        document.getElementById("entropy");
+
+    const remainingEl =
+        document.getElementById("remaining");
+
+    const analysisEl =
+        document.getElementById("analysis");
+
+    const logEl =
+        document.getElementById("log");
+
+    let score = 0;
+    let turns = 0;
+    let syncTotal = 0;
+
+    function rand(min,max){
+
+        return Math.floor(
+            Math.random()*(max-min+1)
+        )+min;
+    }
+
+    let current = rand(1,20);
+
+    const cells = [];
+
+    for(let i=0;i<TOTAL;i++){
+
+        const div =
+            document.createElement("div");
+
+        div.className = "cell";
+
+        const cell = {
+            index:i,
+            value:null,
+            entropy:rand(20,80),
+            div
+        };
+
+        div.onclick = ()=>collapse(cell);
+
+        gridEl.appendChild(div);
+
+        cells.push(cell);
+    }
+
+    function neighbors(index){
+
+        const result = [];
+
+        const row =
+            Math.floor(index/COLS);
+
+        const col =
+            index%COLS;
+
+        cells.forEach(c=>{
+
+            const r =
+                Math.floor(c.index/COLS);
+
+            const cc =
+                c.index%COLS;
+
+            const dist =
+                Math.abs(r-row)
+                +
+                Math.abs(cc-col);
+
+            if(dist===1){
+                result.push(c);
+            }
+        });
+
+        return result;
+    }
+
+    function waveProbability(cell,num){
+
+        let p = 50;
+
+        neighbors(cell.index)
+            .forEach(n=>{
+
+                if(n.value!==null){
+
+                    const diff =
+                        Math.abs(
+                            n.value-num
+                        );
+
+                    p += Math.max(0,20-diff);
+
+                    if(num > n.value){
+                        p += 5;
+                    }
+
+                    if(diff===1){
+                        p += 12;
+                    }
+                }
+            });
+
+        p -= cell.entropy * 0.4;
+
+        p = Math.max(
+            1,
+            Math.min(99,Math.floor(p))
+        );
+
+        return p;
+    }
+
+    function render(){
+
+        let entropySum = 0;
+
+        let bestCell = null;
+        let bestProb = -1;
+
+        cells.forEach(c=>{
+
+            if(c.value===null){
+
+                const p =
+                    waveProbability(
+                        c,
+                        current
+                    );
+
+                if(p>bestProb){
+
+                    bestProb = p;
+                    bestCell = c;
+                }
+            }
+        });
+
+        analysisEl.innerHTML = "";
+
+        cells.forEach(c=>{
+
+            entropySum += c.entropy;
+
+            if(c.value!==null){
+
+                c.div.innerHTML = `
+            <div class="value">
+                ${c.value}
+            </div>
+            `;
+
+                return;
+            }
+
+            const p =
+                waveProbability(
+                    c,
+                    current
+                );
+
+            c.div.innerHTML = `
+        <div class="waveprob">
+            ${p}%
+        </div>
+
+        <div
+            class="wavebar"
+            style="width:${p}%">
+        </div>
+        `;
+
+            const row =
+                document.createElement("div");
+
+            row.className =
+                "analysis-row"
+                +
+                (bestCell===c
+                    ? " best"
+                    : "");
+
+            row.innerHTML = `
+        CELL ${c.index+1}<br>
+        wave_probability = ${p}%<br>
+        entropy = ${c.entropy.toFixed(1)}
+        `;
+
+            analysisEl.appendChild(row);
+        });
+
+        currentEl.innerText = current;
+
+        scoreEl.innerText = score;
+
+        entropyEl.innerText =
+            (entropySum/TOTAL)
+                .toFixed(1);
+
+        syncEl.innerText =
+            turns===0
+                ? "0%"
+                : Math.floor(
+                syncTotal/turns
+            ) + "%";
+
+        remainingEl.innerText =
+            cells.filter(
+                c=>c.value===null
+            ).length;
+    }
+
+    function sequenceResonance(){
+
+        let bonus = 0;
+
+        for(let r=0;r<4;r++){
+
+            const row =
+                cells
+                    .slice(r*5,r*5+5)
+                    .map(c=>c.value);
+
+            let streak = 1;
+
+            for(let i=1;i<row.length;i++){
+
+                if(
+                    row[i]!==null &&
+                    row[i-1]!==null &&
+                    row[i] > row[i-1]
+                ){
+                    streak++;
+                }else{
+                    streak=1;
+                }
+
+                if(streak>=3){
+                    bonus += streak*5;
+                }
+            }
+        }
+
+        return bonus;
+    }
+
+    function collapse(cell){
+
+        if(cell.value!==null){
+            return;
+        }
+
+        let bestProb = -1;
+
+        cells.forEach(c=>{
+
+            if(c.value===null){
+
+                bestProb =
+                    Math.max(
+                        bestProb,
+                        waveProbability(
+                            c,
+                            current
+                        )
+                    );
+            }
+        });
+
+        const observed =
+            waveProbability(
+                cell,
+                current
+            );
+
+        const sync =
+            Math.floor(
+                (observed/bestProb)*100
+            );
+
+        syncTotal += sync;
+
+        let gained =
+            observed
+            +
+            Math.floor(sync*0.5);
+
+        gained +=
+            sequenceResonance();
+
+        score += gained;
+
+        turns++;
+
+        cell.value = current;
+
+        neighbors(cell.index)
+            .forEach(n=>{
+
+                if(n.value===null){
+
+                    n.entropy =
+                        Math.max(
+                            5,
+                            n.entropy-rand(5,15)
+                        );
+                }
+            });
+
+        logEl.innerHTML =
+            `
+    <div>
+    observation = ${current}<br>
+    wave_sync = ${sync}%<br>
+    collapse_gain = ${gained}<br>
+    entropy_shift detected
+    </div>
+    `
+            +
+            logEl.innerHTML;
+
+        current = rand(1,20);
+
+        render();
+
+        if(
+            cells.every(
+                c=>c.value!==null
+            )
+        ){
+
+            setTimeout(()=>{
+
+                alert(
+                    "WAVE FIELD COLLAPSED\n\nFINAL SCORE = "
+                    + score
+                );
+
+            },200);
+        }
+    }
+
+    render();
+
+</script>
+
+</body>
+</html>
