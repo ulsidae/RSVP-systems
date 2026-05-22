@@ -8,7 +8,7 @@ The goal is not to inflate significance, but to separate practical demonstration
 
 ## 🔗 Materials
 
-- **Original Presentation(PDF) 🌐Korean :** [📑 View Original Presentation]()  
+- **Original Presentation(PDF) 🌐Korean :** [📑 View Original Presentation](https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%93%9ABlockchain%20Security%20Re-Engineering/%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%EB%B0%9C%ED%91%9C%EC%9A%A9%20%EC%9E%90%EB%A3%8C.pdf)  
 - **Blockchain Security Analysis:** [📄 Read Paper via GitHub Pages](https://ulsidae.github.io/dev_logs/Security%20&%20Crypto/Blockchain%20Security%20Analysis/)
 - **Result:** [📑 Blockchain Security Analysis](https://github.com/ulsidae/dev_logs/tree/main/Security%20%26%20Crypto/Blockchain%20Security%20Analysis)  
   
