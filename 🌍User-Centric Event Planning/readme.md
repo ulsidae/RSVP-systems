@@ -1,7 +1,5 @@
 # 🎭 User-Centric Event Planning
 
-<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DUser-Centric%20Event%20Planning/img/thumb.jpg" height="400" />
-
 ## 📌 Problem
 Selected to perform at a student council showcase where the challenge was balancing individual presence with overall team cohesion.
 
@@ -12,6 +10,9 @@ Selected to perform at a student council showcase where the challenge was balanc
 ---
 
 ## 🧠 Approach
+
+🔗 [Video](https://github.com/ulsidae/RSVP-systems/raw/main/%F0%9F%8C%8DUser-Centric%20Event%20Planning/video/1.mp4)
+
 Instead of focusing purely on technical perfection, I analyzed what the audience actually expected from a student council performance: energy, confidence, synchronization, and stage presence.
 
 Based on this, we structured the performance to maintain overall team consistency while still giving each member moments that stood out individually.
@@ -19,6 +20,9 @@ Based on this, we structured the performance to maintain overall team consistenc
 ---
 
 ## ⚙️ Execution
+
+🔗 [Video](https://github.com/ulsidae/RSVP-systems/raw/main/%F0%9F%8C%8DUser-Centric%20Event%20Planning/video/2.mp4)
+
 With limited dance experience, learning the choreography was initially difficult.
 
 To close the gap quickly, I relied on repetitive self-monitoring and consistent individual practice outside team rehearsals.
