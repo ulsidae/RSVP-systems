@@ -1,3 +1,21 @@
+> [!WARNING]
+> These original notes were written as raw thought-processing documents during lectures and discussions.
+>
+> Some sections contain unfinished ideas, casual phrasing, blunt observations, or rapidly written interpretations intended to capture thinking in real time rather than polished academic writing.
+>
+> The purpose of including them is transparency:
+> to preserve the reasoning process behind the final PM-oriented reinterpretation of the course material.
+>
+> The README represents the refined and structured version of those ideas.
+>
+> ---
+>
+> 본 노트들은 강의 및 토론 과정에서 사고 흐름을 실시간으로 정리한 raw note 형태의 기록입니다.
+>
+> 일부 표현은 거칠거나 미완성된 상태일 수 있으며, 학술적 문체보다는 실제 사고 과정과 관찰을 보존하는 데 목적이 있습니다.
+>
+> README.md는 이러한 아이디어들을 Product Management 관점에서 재구성하고 정제한 최종 버전입니다.
+
 ---
 
 면접 전략 - 많이 준비하는 것보다 더 중요한것 = 본인의 마음 상태가 평온한 것
