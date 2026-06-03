@@ -1,4 +1,7 @@
 # 🚀 Todo Dashboard: UX Validation & Product Iteration
+
+📓 [FocusBoard source](https://github.com/ulsidae/dev_logs/tree/main/Frontend%26Client-side/Todo%20Dashboard)
+
 ## 🎯 Why I Conducted User Research
 While reviewing my previous projects, I noticed a recurring pattern:
 * **Implementation-heavy:** Most projects focused on building features rather than ensuring usability.
