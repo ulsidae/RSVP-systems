@@ -53,8 +53,10 @@ Tasks are divided into three categories:
 * **No Post-Completion Value:** Once a task was finished, the system provided no feedback. Users requested **productivity statistics, completion trends, and habit tracking.**
 ---
 ## 🚀 Product Insight
+
 The most valuable lesson from this exercise is that **users are not looking for another todo application; they are looking for a system that helps them improve.**
 I realized that the system I built for my own convenience was not necessarily the system users wanted. This gap—between "a tool that works" and "a tool that adds value"—is the most critical takeaway. Even with an intuitive interface, users expect long-term value beyond basic task management.
+
 ---
 ## 🔮 Next Iteration
 Future development will evolve the project into a **Productivity Intelligence System** by focusing on:
