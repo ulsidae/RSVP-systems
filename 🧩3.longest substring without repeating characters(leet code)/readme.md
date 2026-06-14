@@ -16,8 +16,6 @@ A substring must consist of consecutive characters. Any repeated character inval
 
 ### ⚠️  Key constraints
 
-- Naive approaches lead to O(N²) time complexity
-
 - Repeated substring construction must be avoided
 
 - Efficient duplicate tracking is required while scanning once
