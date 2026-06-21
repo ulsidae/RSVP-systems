@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>coinbug - by Jet</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding: 50px; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 400px; }
+        h2 { color: #1a73e8; margin-top: 0; }
+        .db-status { background: #e8f0fe; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #d2e3fc; }
+        .balance { font-size: 24px; font-weight: bold; color: #d93025; }
+        button { width: 100%; padding: 12px; border: none; border-radius: 6px; background: #1a73e8; color: white; cursor: pointer; font-size: 16px; }
+        button:active { background: #174ea6; }
+        #logs { height: 150px; overflow-y: auto; background: #202124; color: #34a853; padding: 10px; font-family: monospace; font-size: 12px; border-radius: 4px; margin-top: 15px; }
+        .warning { color: #f29900; font-weight: bold; margin-top: 10px; display: none; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>Jet의 중앙 집중식 은행</h2>
+    <p>블록체인 없이 DB만 있는 시스템</p>
+
+    <div class="db-status">
+        <div>현재 내 DB 잔액:</div>
+        <div class="balance"><span id="balance">100</span> COIN</div>
+    </div>
+
+    <button onclick="attack()">100원 송금하기 (공격!)</button>
+
+    <div id="warning" class="warning">⚠️ 경고: 시스템 붕괴!</div>
+
+    <div id="logs">
+        [시스템 가동 중...]<br>
+    </div>
+</div>
+
+<script>
+    // 가상의 중앙 DB
+    let virtualDB = {
+        jet_balance: 100
+    };
+
+    const logBox = document.getElementById('logs');
+    const balanceDisplay = document.getElementById('balance');
+    const warningMsg = document.getElementById('warning');
+
+    function addLog(msg) {
+        logBox.innerHTML += `> ${msg}<br>`;
+        logBox.scrollTop = logBox.scrollHeight;
+    }
+
+    // 현실적인 시뮬레이션: 서버 처리 지연(0.5초)을 가정
+    async function attack() {
+        addLog("송금 요청 발생...");
+
+        // 1. 잔액 확인 (이 시점에서는 100원이 있음)
+        if (virtualDB.jet_balance >= 100) {
+            addLog("검증 통과: 잔액 충분.");
+
+            // 2. 서버 네트워크/DB 처리 지연 발생 (취약점 구간)
+            // 이 0.5초 사이에 버튼을 또 누르면 두 번째 요청도 위 검증을 통과함!
+            await new Promise(resolve => setTimeout(resolve, 500));
+
+            // 3. 차감 작업
+            virtualDB.jet_balance -= 100;
+            balanceDisplay.innerText = virtualDB.jet_balance;
+            addLog(`결과: 100원 차감 완료. (남은 잔액: ${virtualDB.jet_balance})`);
+
+            if (virtualDB.jet_balance < 0) {
+                warningMsg.style.display = 'block';
+                addLog("!!! 무한 동력 발생 !!!");
+            }
+        } else {
+            addLog("실패: 잔액 부족.");
+        }
+    }
+</script>
+
+</body>
+</html>
