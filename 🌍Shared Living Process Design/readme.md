@@ -82,6 +82,19 @@ Private areas remained each person's own responsibility.
 
 ---
 
+## Before
+
+> 📷 
+
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(1).jpg" height="200" /> <img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(2).jpg" height="200" /> <img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(5).jpg" height="200" />
+
+## After
+
+> 📷
+
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(7).jpg" height="200" /> <img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(4).jpg" height="200" /> <img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(6).jpg" height="200" />
+
+
 # Implementation
 
 ## Process Design
@@ -96,10 +109,6 @@ and replaced assumptions with a predictable routine.
 
 ---
 
-## Before
-
-> 📷 **Insert photos before cleaning**
-
 ### Observations
 
 - Shared spaces were maintained inconsistently.
@@ -107,10 +116,6 @@ and replaced assumptions with a predictable routine.
 - Responsibilities were often assumed rather than defined.
 
 ---
-
-## After
-
-> 📷 **Insert photos after cleaning**
 
 ### Improvements
 
@@ -169,6 +174,8 @@ This experience strengthened several ideas that I believe also apply to product 
 # Results
 
 After introducing the new workflow:
+
+<img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(9).jpg" height="400" /> <img src="https://github.com/ulsidae/RSVP-systems/blob/main/%F0%9F%8C%8DShared%20Living%20Process%20Design/img/1%20(8).jpg" height="400" />
 
 - Responsibilities became clearly defined.
 - Shared-space maintenance became more consistent.
