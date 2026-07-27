@@ -43,12 +43,15 @@
 
 ## 📂 프로젝트 구조
 
-각 항목은 다음 기준으로 정리되어 있습니다:
+각 항목은 다음 기준을 순서로 정리되어 있습니다:
 
-Problem → 문제 정의
-Approach → 해결 방법
-Implementation → 구현 내용
-Result / Insight → 결과 및 개선 사항
+1.Problem → 문제 정의
+
+2.Approach → 해결 방법
+
+3.Implementation → 구현 내용
+
+4.Result / Insight → 결과 및 개선 사항
 
 ---
 
