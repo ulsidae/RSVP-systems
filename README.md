@@ -1,16 +1,5 @@
 # 🍯 R.S.V.P — Ready Systems, Verified Performance
 
-🌐 [Korean Version](https://github.com/ulsidae/RSVP-systems/blob/main/kr.md)
-
----
-
-## 👤 About Me
-
-I build systems with a focus on structure, efficiency, and real-world impact.  
-I don’t just solve problems — I try to understand them deeply and find better ways to approach them.
-
-This repository reflects how I think, build, and improve over time.
-
 ---
 
 ## 🧭 Why This Repository Exists
@@ -22,7 +11,7 @@ Rather than treating problems as isolated tasks, I approach them as systems — 
 
 ---
 
-## 🛠️ What I Do
+## 🛠️ What This Repository Covers
 
 ### 1. 🧩 Problem Solving (Coding Tests)
 
@@ -61,7 +50,7 @@ Not every project is perfect — but each one shows how my thinking evolves.
 
 ---
 
-## 🎯 What I Focus On
+## 🎯 Engineering Principles
 
 - Structured problem solving  
 - Optimization and efficiency  
@@ -75,3 +64,14 @@ Not every project is perfect — but each one shows how my thinking evolves.
 Consistency isn’t about frequent commits — it’s about meaningful progress over time.
 
 This repository evolves as I rethink, rebuild, and refine how I approach problems.
+
+---
+
+## 🔄 Engineering Reflection
+
+During the development process, I realized that engineering is not only about identifying problems, but also about building, validating, and improving solutions.
+
+This reflection documents how my approach has evolved from analyzing problems to building, validating, and improving solutions.
+
+[🔄 Portfolio Reflection: Turning Ideas into Engineering Results](https://github.com/ulsidae/RSVP-systems/tree/main/%F0%9F%94%84%20Portfolio%20Reflection%3A%20Turning%20Ideas%20into%20Engineering%20Results)
+
