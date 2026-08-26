@@ -1,178 +1,188 @@
-# 🔄 Portfolio Reflection: Turning Ideas into Engineering Results
+# 🔄 Portfolio Reflection: From Ideas to Engineering Results
 
 ## From Explaining Problems to Proving Solutions
 
-When I first built my portfolio, I focused on documenting my thoughts behind each project.
+When I first built my portfolio, I focused heavily on documenting the reasoning behind each project.
 
 I wanted to show more than the technologies I used. I wanted to explain what problems I identified, why I made certain decisions, and what I learned throughout the development process.
 
 Because of this, I documented technical decisions, architectural considerations, and limitations I encountered while building each project.
 
-However, after receiving feedback from developers and industry professionals, I realized that there was a gap between understanding engineering problems and demonstrating engineering results.
+However, after receiving feedback from developers and industry professionals, I realized there was a gap between **understanding an engineering problem and demonstrating a working solution**.
 
-> Identifying problems is the beginning of engineering, not the final outcome.
+> **Identifying a problem is the beginning of engineering, not the final outcome.**
 
-A good engineer does not stop at recognizing limitations. They turn those observations into implementations, validate their decisions, and improve the system through iteration.
+A good engineer does not stop at recognizing limitations. They turn observations into hypotheses, implement solutions, validate their decisions, and iterate based on evidence.
 
-This reflection documents the weaknesses I found in my previous portfolio approach and how I plan to improve my engineering process.
+This reflection documents how that realization changed the way I approach my projects—and how I began applying it to my subsequent work.
 
 ---
 
 # External Feedback & Reassessment
 
-I am currently receiving feedback from developers and industry professionals regarding my portfolio.
+Feedback from developers and industry professionals helped me look at my portfolio from a different perspective.
 
-The feedback helped me look at my projects from a different perspective.
+One of my strengths was my ability to analyze problems and think carefully about technical decisions.
 
-One of my strengths was my ability to analyze problems and think about technical decisions. However, I realized that my portfolio often focused more on explaining my thoughts than proving the results of my engineering decisions.
+However, I realized that my portfolio sometimes spent more time explaining what I thought than demonstrating what I actually changed.
 
-The issue was not the lack of ideas.
+The issue was not a lack of ideas.
 
-The issue was that some ideas remained as analysis rather than becoming measurable improvements.
+The problem was that some ideas remained at the level of analysis instead of becoming implementations that could be tested and measured.
 
-Therefore, instead of simply adding more projects, I decided to revisit my existing work and improve the way I design, implement, validate, and communicate engineering outcomes.
+This led me to reconsider what I wanted my portfolio to demonstrate.
+
+Rather than simply documenting more projects, I wanted to improve the way I:
+
+* Define problems
+* Form hypotheses
+* Implement solutions
+* Validate results
+* Measure outcomes
+* Communicate engineering decisions
+
+This became the basis for changing my development process.
 
 ---
 
 # 1. Separating Experiences from Software Engineering
 
-One of the biggest lessons was understanding the difference between describing an experience and describing an engineering achievement.
+One of the first lessons was understanding the difference between describing an experience and describing an engineering achievement.
 
 In my previous portfolio, I sometimes interpreted various experiences from a system-oriented perspective.
 
-For example, in the RSVP project, I described decision-making, role adjustment, and operational experiences as examples of "system thinking."
+For example, in the RSVP-system repository, I described decision-making, role adjustment, and operational experiences as examples of "system thinking."
 
-However, through feedback, I realized that organizational systems and software systems are fundamentally different.
+Through feedback, I realized that organizational systems and software systems are fundamentally different.
 
-The experience itself was valuable, but the description needed to be more accurate.
+The experience itself was valuable, but the way I described it needed to be more precise.
 
-Rather than presenting it as software engineering, it is better represented as:
+Rather than presenting every experience as software engineering, I now separate the skills demonstrated by each experience:
 
-- Problem solving under constraints
-- Team coordination
-- Adaptability in unexpected situations
+* Problem solving under constraints
+* Team coordination
+* Adaptability
+* Decision-making
+* Technical implementation
 
-This changed how I approach portfolio writing.
+This changed how I approach both portfolio writing and project reflection.
 
-The goal is not to make every experience sound like engineering.
+The goal is not to make every experience sound technical.
 
-The goal is to clearly explain what engineering-related skills each experience demonstrates.
+The goal is to accurately communicate what each experience demonstrates.
 
 ---
 
 # 2. Moving from Analysis to Implementation
 
-A recurring pattern in my previous projects was spending significant time identifying technical problems.
+In my earlier projects, I often spent significant time identifying technical problems.
 
-Examples:
+For example:
 
 ## AURIX
-- Analyzed risks such as Prompt Injection and Memory Poisoning in RAG-based systems
+
+I analyzed risks such as Prompt Injection and Memory Poisoning in RAG-based systems.
 
 ## July Ruby IDE
-- Identified limitations of temporary-file-based execution
+
+I identified limitations caused by temporary-file-based execution.
 
 ## cori_tts
-- Identified platform dependency issues
 
-These analyses helped me understand the problems behind the technologies I was working with.
+I identified platform dependency issues and limitations in the execution environment.
 
-However, I realized that recognizing a limitation is only the first step.
+These analyses helped me understand the technologies and their limitations.
 
-An engineer needs to answer the next question:
+However, I eventually realized that recognizing a limitation is only the first step.
 
-> "What did you do after discovering the problem?"
+The more important question is:
 
-Previously:
+> **"What did you do after discovering the problem?"**
 
+My previous process often looked like this:
 
-Problem Discovery
+**Problem Discovery**
 ↓
-Analysis
+**Analysis**
 ↓
-Documentation
+**Documentation**
 
+I wanted to change it to:
 
-Improved process:
-
-
-Problem Discovery
+**Problem Discovery**
 ↓
-Hypothesis
+**Hypothesis**
 ↓
-Implementation
+**Implementation**
 ↓
-Testing
+**Testing**
 ↓
-Measurement
+**Measurement**
 ↓
-Iteration
+**Iteration**
 ↓
-Documentation
+**Documentation**
 
+The difference is significant.
 
-For example, instead of only documenting security concerns in AURIX, I want to extend the project by:
+Instead of simply documenting that a security problem might exist in AURIX, for example, the next step should be to create realistic attack scenarios, implement defensive mechanisms, test them, measure their effectiveness, and document the results.
 
-- Creating realistic attack scenarios
-- Implementing defense mechanisms
-- Measuring effectiveness
-- Documenting improvements
+The role of documentation changes as well.
 
-The goal is to turn technical observations into tested improvements and measurable results.
+It is no longer the final product of the investigation.
+
+It becomes the record of an engineering process.
 
 ---
 
-# 3. Moving from Documentation to Engineering Communication
+# 3. From Documentation to Engineering Communication
 
 Another lesson was that explaining a system through text alone has limitations.
 
-Documentation explains intent, but engineering communication also requires structures and evidence that allow others to quickly understand the system.
+Documentation can explain intent, but engineering communication should also make the system and its decisions easier to understand and verify.
 
-Future project documentation will include:
+For this reason, I began incorporating more evidence into my project documentation:
 
-- Architecture diagrams
-- Data flow diagrams
-- Sequence diagrams
-- Testing results
-- Performance measurements
+* Architecture diagrams
+* Testing results
+* Performance measurements
+* Deployment verification
 
-Examples:
+The goal is not to create more documentation for its own sake.
 
-## AURIX
-- RAG pipeline architecture
-- Memory management flow
-
-## RepoLens
-- GitHub API communication flow
-- Data processing structure
-
-## cori_tts
-- Wrapper architecture
-- Execution flow
-
-The goal is not to create more documentation.
-
-The goal is to make the engineering decisions behind the project easier to understand and verify.
+The goal is to make engineering decisions easier for another person to understand, reproduce, and evaluate.
 
 ---
 
-# 4. Turning Trade-offs into Measurable Decisions
+# 4. Turning Trade-offs into Decisions
 
-Previously, I focused on explaining why I chose certain technologies or architectures.
+Another important lesson was understanding that engineering decisions are fundamentally trade-offs.
 
-However, a trade-off is meaningful only when the consequences of that decision are understood.
+Previously, I often focused on explaining why I chose a particular technology or architecture.
 
-Instead of:
+But saying that a design was "scalable" or "maintainable" is not enough.
 
-> Designed the structure with scalability in mind.
+A meaningful engineering decision should explain:
 
-I want to explain:
+* What problem needed to be solved
+* What alternatives existed
+* Why one option was selected
+* What was sacrificed
+* What consequences resulted from the decision
 
-> Why this structure was chosen, what alternatives existed, and how the decision affected maintainability, performance, or development cost.
+This became especially clear while working on **Memory Garden**.
 
-Engineering decisions should not only be justified by reasoning.
+The project started as a small idea, but its scope gradually expanded as more features and possibilities were added.
 
-They should be supported by evidence.
+Without a fixed deadline, the scope continued to grow while implementation struggled to keep up.
+
+Eventually, I realized that project management was not simply about deciding **what to build**.
+
+It was also about deciding **what not to build**.
+
+> **Deciding what not to do is also project management.**
+
+That lesson became important in my later work.
 
 ---
 
@@ -180,65 +190,190 @@ They should be supported by evidence.
 
 Working on **Memory Garden** changed my perspective on software development.
 
-Before this project, I often approached development from a technical perspective:
+Before this project, I often approached development primarily from a technical perspective:
 
 > "Does the feature work correctly?"
 
-However, building a service with a team made me consider another question:
+Building a service with another developer made me consider another question:
 
-> "Does this feature provide a meaningful experience for users?"
+> **"Does this feature create a meaningful experience for users?"**
 
-Memory Garden is an AI-based service focused on personal records and user experiences.
+Memory Garden was envisioned as a family-centered platform for preserving and revisiting personal memories.
 
-Through this project, I learned that building useful software is not only about implementing features.
+The project explored ideas such as:
 
-It is about creating something users can understand, use, and find value in.
+* AI-assisted memory recall
+* Personal memory journaling
+* Family-based memory sharing
+* Preserving photos and videos
 
----
+Although the project did not reach its original implementation scope, that limitation became part of what I learned from it.
 
-# 6. A New Challenge: NHN Game x AI Hackathon
+The project taught me that product development involves continuously balancing:
 
-Memory Garden provided valuable experience in team collaboration and service development.
+* User value
+* Scope
+* Time
+* Technical feasibility
+* Available resources
 
-However, because it is a long-term project, I wanted to challenge myself in a different environment: building a functional prototype under a fixed deadline with clear responsibilities.
+Eventually, I had to make a difficult trade-off and step away from the project to focus on another priority.
 
-Real-world development requires more than writing code.
+That experience changed how I think about project management.
 
-It requires prioritizing tasks, making decisions under constraints, collaborating effectively, and delivering results within a limited timeframe.
+A project does not necessarily fail because every planned feature was not implemented.
 
-This is why I decided to participate in the **2026 NHN Game x AI Hackathon**.
+Sometimes the most responsible decision is to recognize constraints, communicate them clearly, and decide what should happen next.
 
-I have participated in development competitions before. Not every attempt resulted in success, but each experience helped me identify what I lacked and what needed improvement.
-
-Through this hackathon, I want to focus on:
-
-- Building a functional prototype within a limited timeframe
-- Working effectively through clear role distribution
-- Applying user-centered development
-- Delivering a functional and executable result
-
-Through the development process of Memory Garden, I learned that building software is not only about implementing features, but also about considering how users interact with and experience a service.
-
-NHN Game x AI Hackathon represents an opportunity to apply those lessons and turn them into a concrete engineering result.
+Memory Garden therefore became less of a story about an unfinished product and more of a lesson about **scope, trade-offs, and responsibility**.
 
 ---
 
-# Future Direction
+# 6. Applying Those Lessons: NHN Game x AI Hackathon
 
-This process changed how I define a strong portfolio.
 
-Previously, I focused on showing:
+Unlike Memory Garden, this project had a strict development period.
 
-> "I thought deeply about these problems."
+We could not indefinitely expand the scope or postpone difficult decisions.
 
-Now, I want to show:
+We had to prioritize.
 
-> "I identified these problems, built solutions, tested them, and improved the results."
+The goal became simple:
 
-Problem definition is where engineering begins.
+> **Build one complete experience instead of many incomplete features.**
 
-But engineering value is created through implementation, validation, and iteration.
+Our team, Regidit, developed **Don't Take My Gummies!**, a playable browser-based board game.
 
-My goal is to become an engineer who does not only explain ideas, but proves them through working solutions.
+I took responsibility for:
 
-**These changes are already being applied to my current development process, starting with the NHN Game x AI Hackathon.**
+* Project planning
+* Feature prioritization
+* Requirement definition
+* Frontend implementation
+* Deployment setup
+* Technical decision-making
+* Team coordination
+
+This time, the development process was much closer to the process I had previously described theoretically.
+
+As the project lead, I had to decide what belonged in the MVP and what needed to be left out.
+
+We used AI as a development collaborator for code assistance, debugging, testing, design, and localization, while reviewing and validating the generated results ourselves.
+
+Most importantly, we produced a working result.
+
+The final project included:
+
+* A playable game prototype
+* Web deployment
+* Three-language support
+* Automated game logic testing
+* A modular game structure
+
+
+44 automated tests passed with 0 failures.
+
+
+---
+
+# 7. Validation Changed How I Think About "Done"
+
+One of the most valuable lessons from the NHN project came from deployment.
+
+The application worked locally.
+
+I initially assumed that this meant the project was ready.
+
+It was not.
+
+After deployment, issues appeared involving French localization and resource handling.
+
+Instead of treating deployment as the final step, we:
+
+1. Reproduced the issue
+2. Investigated the cause
+3. Improved the localization structure
+4. Deployed the changes
+5. Re-validated the result
+
+This changed how I define completion.
+
+A feature being implemented does not necessarily mean it is finished.
+
+A feature is closer to finished when it has been **implemented, tested, validated in its actual environment, and shown to work as intended.**
+
+That distinction sounds simple, but experiencing it through an actual project made the concept much more concrete.
+
+---
+
+# 8. From Portfolio Claims to Evidence
+
+The biggest change in my portfolio approach is therefore not visual.
+
+It is methodological.
+
+Previously, I often wanted my portfolio to demonstrate:
+
+> **"I think deeply about engineering problems."**
+
+Now I want it to demonstrate:
+
+> **"I identified a problem, made a decision, implemented it, tested it, and learned from the result."**
+
+This does not mean every project needs sophisticated architecture, large-scale infrastructure, or impressive benchmarks.
+
+A small project can still demonstrate engineering maturity if the reasoning and evidence are clear.
+
+For example:
+
+A deployment bug can demonstrate debugging.
+
+A failed architecture can demonstrate iteration.
+
+A deliberately excluded feature can demonstrate prioritization.
+
+A test suite can demonstrate validation.
+
+A trade-off can demonstrate decision-making.
+
+The value is not necessarily in the scale of the project.
+
+It is in the quality of the engineering process.
+
+---
+
+# What Changed
+
+Looking back, I do not think my earlier portfolio was useless.
+
+It reflected an important stage of my development.
+
+I was learning to identify problems, understand systems, and articulate technical decisions.
+
+But I was spending too much effort proving that I could **think about engineering**.
+
+My recent projects have pushed me toward proving that I can **practice engineering**.
+
+Memory Garden taught me about product thinking, collaboration, scope, and trade-offs.
+
+The NHN Game x AI Hackathon gave me an opportunity to apply those lessons under a real deadline and produce a working result.
+
+The two projects were very different.
+
+One remained an unfinished idea.
+
+The other became a completed MVP.
+
+But together, they taught me something that neither project could have taught me alone:
+
+> **An idea is only the beginning. Engineering begins when you try to make it work.**
+
+That is the direction I want to carry into my future projects.
+
+Not simply explaining what I think.
+
+Not simply collecting technologies.
+
+But identifying problems, making deliberate decisions, building solutions, validating them, and learning from what actually happens.
+
+**I want my portfolio to be evidence of that process.**
